@@ -1,0 +1,616 @@
+{
+  "cars": [
+    {
+      "logo": null,
+      "company": "Biglers Biler",
+      "category": "Luxury",
+      "picture":
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/FoS20162016_0623_091222AA_%2827584854040%29.jpg/2560px-FoS20162016_0623_091222AA_%2827584854040%29.jpg",
+      "make": "Aston Martin",
+      "model": "DB7",
+      "year": 2017,
+      "regno": "DD12394",
+      "seats": 2,
+      "doors": 2,
+      "gear": "Automatic",
+      "aircondition": true,
+      "location": "Amager",
+      "priceperday": 3000,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "email51@email.dk",
+          "fromDate": "05/07/2018",
+          "toDate": "18/07/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "tryllebob2@jubii.dk",
+          "fromDate": "01/05/2018",
+          "toDate": "12/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Luxury",
+      "picture":
+        "https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/788x525/quality/85/https://s.aolcdn.com/commerce/autodata/images/CAC70AUC171A021001.jpg",
+      "make": "Audi",
+      "model": "R8",
+      "year": 2015,
+      "regno": "DD12112",
+      "seats": 2,
+      "doors": 2,
+      "gear": "Automatic",
+      "aircondition": true,
+      "location": "Aarhus",
+      "priceperday": 2500,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "email@email.dk",
+          "fromDate": "07/07/2018",
+          "toDate": "10/07/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "tryllebob@jubii.dk",
+          "fromDate": "10/05/2018",
+          "toDate": "12/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Luxury",
+      "picture":
+        "https://car-images.bauersecure.com/pagefiles/74344/1040x585/mercedes_s500_01.jpg",
+      "make": "Mercedes",
+      "model": "S500",
+      "year": 2017,
+      "regno": "DD12312",
+      "seats": 4,
+      "doors": 2,
+      "gear": "Automatic",
+      "aircondition": true,
+      "location": "KÃ ̧benhavn",
+      "priceperday": 2000,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "jorge@hejne.dk",
+          "fromDate": "23/06/2018",
+          "toDate": "10/07/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Luxury",
+      "picture":
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Jaguar_F_type_-Mondial_de_l%27Automobile_de_Paris_2012_-015.jpg/1920px-Jaguar_F_type_-Mondial_de_l%27Automobile_de_Paris_2012_-015.jpg",
+      "make": "Jaguar",
+      "model": "F-Type",
+      "year": 2015,
+      "regno": "DD81771",
+      "seats": 2,
+      "doors": 2,
+      "gear": "Manual",
+      "aircondition": false,
+      "location": "KÃ ̧benhavn",
+      "priceperday": 2000,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "ads@CFF.dk",
+          "fromDate": "02/01/2018",
+          "toDate": "18/01/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "ysd@jagjag.dk",
+          "fromDate": "19/02/2018",
+          "toDate": "27/02/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Standard",
+      "picture":
+        "https://d1ek71enupal89.cloudfront.net/images/blocks_png/SEAT/LEON/5DR/17SeatLeoSeDynTec5drBlaFL1_800.jpg",
+      "make": "Seat",
+      "model": "Leon",
+      "year": 2016,
+      "regno": "DD17667",
+      "seats": 5,
+      "doors": 5,
+      "gear": "Manual",
+      "aircondition": true,
+      "location": "KÃ ̧benhavn",
+      "priceperday": 1500,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "email@email.dk",
+          "fromDate": "02/09/2018",
+          "toDate": "18/11/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "email2@email.dk",
+          "fromDate": "02/03/2018",
+          "toDate": "12/08/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Mini",
+      "picture":
+        "https://images.toyota-europe.com/dk/ag/width/1200/exterior-3.jpg",
+      "make": "Toyota",
+      "model": "Aygo",
+      "year": 2008,
+      "regno": "DD12767",
+      "seats": 4,
+      "doors": 5,
+      "gear": "Manual",
+      "aircondition": true,
+      "location": "Esbjerg",
+      "priceperday": 500,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "whatever@email.dk",
+          "fromDate": "02/12/2018",
+          "toDate": "09/01/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "whatever12@email.dk",
+          "fromDate": "04/03/2018",
+          "toDate": "16/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Mini",
+      "picture":
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Peugeot_107_Dreit%C3%BCrer_Scarletrot.JPG/1200px-Peugeot_107_Dreit%C3%BCrer_Scarletrot.JPG",
+      "make": "Peugeot",
+      "model": "107",
+      "year": 2006,
+      "regno": "DD11527",
+      "seats": 4,
+      "doors": 5,
+      "gear": "Manual",
+      "aircondition": true,
+      "location": "Esbjerg",
+      "priceperday": 500,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "hej@email.dk",
+          "fromDate": "02/03/2018",
+          "toDate": "09/05/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "hej42@email.dk",
+          "fromDate": "08/03/2018",
+          "toDate": "19/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Economy",
+      "picture":
+        "https://s.aolcdn.com/commerce/autod ata/images/USC60AUC021B021001.jpg",
+      "make": "Audi",
+      "model": "A6",
+      "year": 2009,
+      "regno": "DD24527",
+      "seats": 5,
+      "doors": 5,
+      "gear": "Automatic",
+      "aircondition": true,
+      "location": "Ballerup",
+      "priceperday": 1750,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "cph2@email.dk",
+          "fromDate": "01/04/2018",
+          "toDate": "11/07/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "business4@test.dk",
+          "fromDate": "04/03/2018",
+          "toDate": "16/08/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Standard",
+      "picture":
+        "https://img3.icarcdn.com/8322134/gallery_used-car-one2car-bmw-3-series-320d-sedan-thailand_8322134_BvhSTm7wLAUgGOOzbpoXoI.jpg?smia=xTM",
+      "make": "BMW",
+      "model": "320d",
+      "year": 2014,
+      "regno": "DD64227",
+      "seats": 5,
+      "doors": 5,
+      "gear": "Automatic",
+      "aircondition": true,
+      "location": "Ballerup",
+      "priceperday": 2000,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "bgg2@email.dk",
+          "fromDate": "02/03/2018",
+          "toDate": "09/05/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "hej123@test.dk",
+          "fromDate": "04/03/2018",
+          "toDate": "16/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Standard",
+      "picture": "https://img.vcars.co.uk/1/vcarsdna/images/280838_1.jpg",
+      "make": "BMW",
+      "model": "525",
+      "year": 2015,
+      "regno": "DD83127",
+      "seats": 5,
+      "doors": 5,
+      "gear": "Automatic",
+      "aircondition": true,
+      "location": "Skovlunde",
+      "priceperday": 2500,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "bor231@email.dk",
+          "fromDate": "08/04/2018",
+          "toDate": "10/05/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "hey234@test.dk",
+          "fromDate": "04/03/2018",
+          "toDate": "16/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Standard",
+      "picture":
+        "https://cdn.nettiauto.com/live/9459237/BMW-760-ae01db12421810df-medium.jpg",
+      "make": "BMW",
+      "model": "760d",
+      "year": 2015,
+      "regno": "DD92137",
+      "seats": 5,
+      "doors": 5,
+      "gear": "Automatic",
+      "aircondition": true,
+      "location": "Skovlunde",
+      "priceperday": 2500,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "test231@email.dk",
+          "fromDate": "02/03/2018",
+          "toDate": "09/05/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "test234@test.dk",
+          "fromDate": "04/03/2018",
+          "toDate": "16/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Economy",
+      "picture":
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Opel_Vectra_C_2.2_Direkt_front.JPG/1200px-Opel_Vectra_C_2.2_Direkt_front.JPG",
+      "make": "Opel",
+      "model": "Vectra",
+      "year": 2003,
+      "regno": "DD11135",
+      "seats": 5,
+      "doors": 5,
+      "gear": "Manual",
+      "aircondition": false,
+      "location": "Skovlunde",
+      "priceperday": 400,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "bil2123@email.dk",
+          "fromDate": "02/03/2018",
+          "toDate": "09/05/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "testcar123@test.dk",
+          "fromDate": "04/03/2018",
+          "toDate": "16/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Economy",
+      "picture":
+        "https://i0.1616.ro/media/2/2621/33217/16888727/1/opel-astra-2015-family-hatchback-1024x440-as16-e01-279.jpg?width=514",
+      "make": "Opel",
+      "model": "Astra",
+      "year": 2011,
+      "regno": "DD24131",
+      "seats": 5,
+      "doors": 4,
+      "gear": "Manual",
+      "aircondition": true,
+      "location": "Lyngby",
+      "priceperday": 1500,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "bilx@email.dk",
+          "fromDate": "11/04/2018",
+          "toDate": "12/05/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "testcar277@test.dk",
+          "fromDate": "25/03/2018",
+          "toDate": "28/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Economy",
+      "picture":
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/2017_Ford_Focus_Zetec_Edition_1.0_Front.jpg/1200px-2017_Ford_Focus_Zetec_Edition_1.0_Front.jpg",
+      "make": "Ford",
+      "model": "Focus",
+      "year": 2013,
+      "regno": "DD83113",
+      "seats": 5,
+      "doors": 4,
+      "gear": "Manual",
+      "aircondition": true,
+      "location": "Lyngby",
+      "priceperday": 800,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "carz@email.dk",
+          "fromDate": "17/03/2018",
+          "toDate": "28/05/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "cars@test.dk",
+          "fromDate": "17/03/2018",
+          "toDate": "29/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Mini",
+      "picture":
+        "https://www.ford.com/cmslibs/content/dam/vdm_ford/live/en_us/ford/nameplate/fiesta/2018/collections/adplanners/18_fie_S_sedan_oxwh.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg",
+      "make": "Ford",
+      "model": "Fiesta",
+      "year": 2012,
+      "regno": "DD12430",
+      "seats": 5,
+      "doors": 4,
+      "gear": "Manual",
+      "aircondition": true,
+      "location": "Lyngby",
+      "priceperday": 1000,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "biler@email.dk",
+          "fromDate": "12/03/2018",
+          "toDate": "15/05/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "cars123@test.dk",
+          "fromDate": "04/03/2018",
+          "toDate": "16/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Premium",
+      "picture":
+        "https://s1.cdn.autoevolution.com/images/gallery/VOLVO142-2435_3.jpg",
+      "make": "Volvo",
+      "model": "142",
+      "year": 2015,
+      "regno": "DD13403",
+      "seats": 5,
+      "doors": 4,
+      "gear": "Manual",
+      "aircondition": true,
+      "location": "BrÃ ̧nshÃ ̧j",
+      "priceperday": 850,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "emailwhat@email.dk",
+          "fromDate": "03/03/2018",
+          "toDate": "10/05/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "what24@test.dk",
+          "fromDate": "04/03/2018",
+          "toDate": "16/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Premium",
+      "picture": "https://betterparts.org/images/volvo-144-01.jpg",
+      "make": "Volvo",
+      "model": "144",
+      "year": 2015,
+      "regno": "DD14823",
+      "seats": 5,
+      "doors": 4,
+      "gear": "Manual",
+      "aircondition": true,
+      "location": "BrÃ ̧nshÃ ̧j",
+      "priceperday": 1000,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "leon@live.dk",
+          "fromDate": "02/03/2018",
+          "toDate": "09/05/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "palle@hotmail.dk",
+          "fromDate": "04/03/2018",
+          "toDate": "16/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Standard",
+      "picture":
+        "https://images.autouncle.com/da/carimages/4adda231-6234-4329-b712-7571dafc37ed_toyota-carina-1-6-107-hk-xli.jpg",
+      "make": "Toyota",
+      "model": "Carina",
+      "year": 1998,
+      "regno": "DD59243",
+      "seats": 5,
+      "doors": 4,
+      "gear": "Manual",
+      "aircondition": false,
+      "location": "Lyngby",
+      "priceperday": 1000,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "emailer@email.dk",
+          "fromDate": "02/09/2018",
+          "toDate": "09/10/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "toyota@test.dk",
+          "fromDate": "04/11/2018",
+          "toDate": "16/12/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Standard",
+      "picture":
+        "https://upload.wikimedia.org/wikipedia/commons/4/48/Toyota_Avensis_%28II%29_%E2%80%93_Frontansicht%2C_1._September_2013%2C_M%C3%BCnster.jpg",
+      "make": "Toyota",
+      "model": "Avensis",
+      "year": 2007,
+      "regno": "DD15127",
+      "seats": 5,
+      "doors": 4,
+      "gear": "Manual",
+      "aircondition": true,
+      "location": "Odense",
+      "priceperday": 750,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "bil123srr@email.dk",
+          "fromDate": "12/11/2018",
+          "toDate": "24/12/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "testcars@test.dk",
+          "fromDate": "04/03/2018",
+          "toDate": "16/05/2018"
+        }
+      ]
+    },
+    {
+      "logo": null,
+      "company": "Rental International",
+      "category": "Premium",
+      "picture":
+        "https://s13252.pcdn.co/wp-content/uploads/2017/03/58ffc1b61e8f5_IMG_5541-4-e1493834273635-940x631.jpg",
+      "make": "Toyota",
+      "model": "Supra",
+      "year": 2016,
+      "regno": "DD42436",
+      "seats": 2,
+      "doors": 2,
+      "gear": "Manual",
+      "aircondition": true,
+      "location": "Odense",
+      "priceperday": 1000,
+      "reservations": [
+        {
+          "companyTag": "Rental International",
+          "customerMail": "jan321@email.dk",
+          "fromDate": "12/01/2018",
+          "toDate": "09/02/2018"
+        },
+        {
+          "companyTag": "Rental International",
+          "customerMail": "testcarsz@test.dk",
+          "fromDate": "14/04/2018",
+          "toDate": "16/05/2018"
+        }
+      ]
+    }
+  ]
+}
