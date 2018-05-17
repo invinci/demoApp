@@ -8,16 +8,33 @@ import {
   Image,
   ActivityIndicator,
   ScrollView,
-  Dimensions
+  Dimensions,
+  TextInput,
+  KeyboardAvoidingView
 } from "react-native";
 import { connect } from "react-redux";
 import { carList } from "../actions/ListAction";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import { Dropdown } from "react-native-material-dropdown";
 
 const { height, width } = Dimensions.get("window");
 class ListContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      search: "",
+      data: [
+        {
+          value: "Name"
+        },
+        {
+          value: "Year"
+        },
+        {
+          value: "Category"
+        }
+      ]
+    };
   }
 
   componentWillMount() {
@@ -29,74 +46,137 @@ class ListContainer extends React.Component {
       console.log(this.props.carData.cars);
     }
     return (
-      <View style={{ flex: 1 }}>
-        <View
-          style={{
-            flex: 0.15,
-            backgroundColor: "dodgerblue",
-            alignItems: "center",
-            justifyContent: "center"
-          }}
-        >
-          <Text
+      <KeyboardAwareScrollView>
+        <View style={{ flex: 1 }}>
+          <View
             style={{
-              fontSize: height * 0.03,
-              color: "white",
-              fontWeight: "bold"
+              flex: 0.3,
+              backgroundColor: "dodgerblue"
             }}
           >
-            {" "}
-            CARS{" "}
-          </Text>
+            <View
+              style={{
+                flex: 0.5
+              }}
+            >
+              <TextInput
+                underlineColorAndroid="transparent"
+                placeholder="search"
+                style={{
+                  borderWidth: 1,
+                  borderColor: "#dadada",
+                  margin: height * 0.01,
+                  marginHorizontal: height * 0.05,
+                  borderRadius: 20
+                }}
+                onChangeText={search => {
+                  this.setState({ search });
+                }}
+              />
+            </View>
+            <View
+              style={{
+                flex: 0.5,
+                flexDirection: "row"
+              }}
+            >
+              <View
+                style={{
+                  flex: 0.5,
+                  alignItems: "center"
+                }}
+              >
+                <Dropdown
+                  containerStyle={{ width: height * 0.15 }}
+                  label="Sort By"
+                  data={this.state.data}
+                />
+              </View>
+              <View
+                style={{
+                  flex: 0.5,
+                  alignItems: "center"
+                }}
+              >
+                <Dropdown
+                  label="Filter"
+                  containerStyle={{ width: height * 0.18 }}
+                  data={this.state.data}
+                />
+              </View>
+            </View>
+          </View>
+          <View style={{ flex: 0.7 }}>
+            {this.props.carData && this.props.carData.cars ? (
+              this.props.carData.cars.map((item, index) => {
+                return (
+                  <View
+                    style={{
+                      backgroundColor: "white",
+                      flexDirection: "row",
+                      padding: 5
+                    }}
+                    key={index}
+                  >
+                    <View
+                      style={{
+                        flex: 0.3,
+                        borderColor: "#dadada",
+                        borderWidth: 1
+                      }}
+                    >
+                      <View style={{ flex: 0.8 }}>
+                        <Image
+                          source={{ uri: item.picture }}
+                          resizeMode="contain"
+                          style={{ flex: 1 }}
+                        />
+                      </View>
+                      <View style={{ flex: 0.2, alignItems: "center" }}>
+                        <Text>{item.year}</Text>
+                      </View>
+                    </View>
+                    <View
+                      style={{
+                        flex: 0.7,
+                        borderColor: "#dadada",
+                        borderWidth: 1,
+                        flexDirection: "row"
+                      }}
+                    >
+                      <View
+                        style={{
+                          flex: 0.5,
+                          alignItems: "flex-start",
+                          justifyContent: "center",
+                          paddingLeft: 5
+                        }}
+                      >
+                        <Text>Reg. No : {item.regno}</Text>
+                        <Text>Category : {item.category}</Text>
+                        <Text>Price : ${item.priceperday}/ per day</Text>
+                      </View>
+                      <View
+                        style={{
+                          flex: 0.5,
+                          alignItems: "flex-start",
+                          justifyContent: "center"
+                        }}
+                      >
+                        <Text>Model : {item.model}</Text>
+                        <Text>Make : {item.make}</Text>
+                        <Text>Location : {item.location}</Text>
+                      </View>
+                    </View>
+                  </View>
+                );
+              })
+            ) : (
+              <ActivityIndicator />
+            )}
+          </View>
         </View>
-        <ScrollView style={{ flex: 0.85 }}>
-          {this.props.carData && this.props.carData.cars ? (
-            this.props.carData.cars.map((item, index) => {
-              return (
-                <View
-                  style={{
-                    height: 100,
-                    backgroundColor: "white",
-                    flexDirection: "row",
-                    padding: 10
-                  }}
-                  key={index}
-                >
-                  <View
-                    style={{
-                      flex: 0.4,
-                      borderColor: "#dadada",
-                      borderWidth: 1
-                    }}
-                  >
-                    <Image
-                      source={{ uri: item.picture }}
-                      resizeMode="contain"
-                      style={{ flex: 1, borderRadius: 50 }}
-                    />
-                  </View>
-                  <View
-                    style={{
-                      flex: 0.6,
-                      borderColor: "#dadada",
-                      borderWidth: 1,
-                      alignItems: "flex-start",
-                      justifyContent: "center",
-                      paddingLeft: 10
-                    }}
-                  >
-                    <Text>Make : {item.make}</Text>
-                    <Text>Model : {item.model}</Text>
-                    <Text>Year : {item.year}</Text>
-                  </View>
-                </View>
-              );
-            })
-          ) : (
-            <ActivityIndicator />
-          )}
-        </ScrollView>
-      </View>
+      </KeyboardAwareScrollView>
     );
   }
 }
