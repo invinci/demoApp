@@ -10,9 +10,11 @@ import {
   ScrollView,
   Dimensions,
   TextInput,
-  KeyboardAvoidingView
+  KeyboardAvoidingView,
+  TouchableOpacity
 } from "react-native";
 import { connect } from "react-redux";
+import { Actions } from "react-native-router-flux";
 import { carList } from "../actions/ListAction";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { Dropdown } from "react-native-material-dropdown";
@@ -46,11 +48,11 @@ class ListContainer extends React.Component {
       console.log(this.props.carData.cars);
     }
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: "white" }}>
         <View
           style={{
             flex: 0.3,
-            backgroundColor: "dodgerblue"
+            backgroundColor: "white"
           }}
         >
           <View
@@ -110,13 +112,16 @@ class ListContainer extends React.Component {
           {this.props.carData && this.props.carData.cars ? (
             this.props.carData.cars.map((item, index) => {
               return (
-                <View
+                <TouchableOpacity
                   style={{
                     backgroundColor: "white",
                     flexDirection: "row",
                     padding: 5
                   }}
                   key={index}
+                  onPress={() => {
+                    Actions.detail({ data: item });
+                  }}
                 >
                   <View
                     style={{
@@ -168,7 +173,7 @@ class ListContainer extends React.Component {
                       <Text>Location : {item.location}</Text>
                     </View>
                   </View>
-                </View>
+                </TouchableOpacity>
               );
             })
           ) : (
