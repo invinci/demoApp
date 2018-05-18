@@ -46,137 +46,136 @@ class ListContainer extends React.Component {
       console.log(this.props.carData.cars);
     }
     return (
-      <KeyboardAwareScrollView>
-        <View style={{ flex: 1 }}>
+      <View style={{ flex: 1 }}>
+        <View
+          style={{
+            flex: 0.3,
+            backgroundColor: "dodgerblue"
+          }}
+        >
           <View
             style={{
-              flex: 0.3,
-              backgroundColor: "dodgerblue"
+              marginTop: height * 0.01,
+              height: height * 0.1
+            }}
+          >
+            <TextInput
+              underlineColorAndroid="transparent"
+              placeholder="search"
+              style={{
+                borderWidth: 1,
+                borderColor: "#dadada",
+                margin: height * 0.01,
+                marginHorizontal: height * 0.05,
+                borderRadius: 20
+              }}
+              onChangeText={search => {
+                this.setState({ search });
+              }}
+            />
+          </View>
+          <KeyboardAvoidingView
+            style={{
+              height: height * 0.1,
+              flexDirection: "row"
             }}
           >
             <View
               style={{
-                flex: 0.5
+                flex: 0.5,
+                alignItems: "center"
               }}
             >
-              <TextInput
-                underlineColorAndroid="transparent"
-                placeholder="search"
-                style={{
-                  borderWidth: 1,
-                  borderColor: "#dadada",
-                  margin: height * 0.01,
-                  marginHorizontal: height * 0.05,
-                  borderRadius: 20
-                }}
-                onChangeText={search => {
-                  this.setState({ search });
-                }}
+              <Dropdown
+                containerStyle={{ width: height * 0.15 }}
+                label="Sort By"
+                data={this.state.data}
               />
             </View>
             <View
               style={{
                 flex: 0.5,
-                flexDirection: "row"
+                alignItems: "center"
               }}
             >
-              <View
-                style={{
-                  flex: 0.5,
-                  alignItems: "center"
-                }}
-              >
-                <Dropdown
-                  containerStyle={{ width: height * 0.15 }}
-                  label="Sort By"
-                  data={this.state.data}
-                />
-              </View>
-              <View
-                style={{
-                  flex: 0.5,
-                  alignItems: "center"
-                }}
-              >
-                <Dropdown
-                  label="Filter"
-                  containerStyle={{ width: height * 0.18 }}
-                  data={this.state.data}
-                />
-              </View>
+              <Dropdown
+                label="Filter"
+                containerStyle={{ width: height * 0.18 }}
+                data={this.state.data}
+              />
             </View>
-          </View>
-          <View style={{ flex: 0.7 }}>
-            {this.props.carData && this.props.carData.cars ? (
-              this.props.carData.cars.map((item, index) => {
-                return (
+          </KeyboardAvoidingView>
+        </View>
+        <ScrollView style={{ flex: 0.7 }}>
+          {this.props.carData && this.props.carData.cars ? (
+            this.props.carData.cars.map((item, index) => {
+              return (
+                <View
+                  style={{
+                    backgroundColor: "white",
+                    flexDirection: "row",
+                    padding: 5
+                  }}
+                  key={index}
+                >
                   <View
                     style={{
-                      backgroundColor: "white",
-                      flexDirection: "row",
-                      padding: 5
+                      flex: 0.3,
+                      borderColor: "#dadada",
+                      borderWidth: 1
                     }}
-                    key={index}
+                  >
+                    <View style={{ flex: 0.8 }}>
+                      <Image
+                        source={{ uri: item.picture }}
+                        resizeMode="contain"
+                        style={{ flex: 1 }}
+                      />
+                    </View>
+                    <View style={{ flex: 0.2, alignItems: "center" }}>
+                      <Text>{item.year}</Text>
+                    </View>
+                  </View>
+                  <View
+                    style={{
+                      flex: 0.7,
+                      borderColor: "#dadada",
+                      borderWidth: 1,
+                      flexDirection: "row"
+                    }}
                   >
                     <View
                       style={{
-                        flex: 0.3,
-                        borderColor: "#dadada",
-                        borderWidth: 1
+                        flex: 0.5,
+                        alignItems: "flex-start",
+                        justifyContent: "center",
+                        paddingLeft: 5
                       }}
                     >
-                      <View style={{ flex: 0.8 }}>
-                        <Image
-                          source={{ uri: item.picture }}
-                          resizeMode="contain"
-                          style={{ flex: 1 }}
-                        />
-                      </View>
-                      <View style={{ flex: 0.2, alignItems: "center" }}>
-                        <Text>{item.year}</Text>
-                      </View>
+                      <Text>Reg. No : {item.regno}</Text>
+                      <Text>Category : {item.category}</Text>
+                      <Text>Price : ${item.priceperday}/ per day</Text>
                     </View>
                     <View
                       style={{
-                        flex: 0.7,
-                        borderColor: "#dadada",
-                        borderWidth: 1,
-                        flexDirection: "row"
+                        flex: 0.5,
+                        alignItems: "flex-start",
+                        justifyContent: "center"
                       }}
                     >
-                      <View
-                        style={{
-                          flex: 0.5,
-                          alignItems: "flex-start",
-                          justifyContent: "center",
-                          paddingLeft: 5
-                        }}
-                      >
-                        <Text>Reg. No : {item.regno}</Text>
-                        <Text>Category : {item.category}</Text>
-                        <Text>Price : ${item.priceperday}/ per day</Text>
-                      </View>
-                      <View
-                        style={{
-                          flex: 0.5,
-                          alignItems: "flex-start",
-                          justifyContent: "center"
-                        }}
-                      >
-                        <Text>Model : {item.model}</Text>
-                        <Text>Make : {item.make}</Text>
-                        <Text>Location : {item.location}</Text>
-                      </View>
+                      <Text>Model : {item.model}</Text>
+                      <Text>Make : {item.make}</Text>
+                      <Text>Location : {item.location}</Text>
                     </View>
                   </View>
-                );
-              })
-            ) : (
-              <ActivityIndicator />
-            )}
-          </View>
-        </View>
-      </KeyboardAwareScrollView>
+                </View>
+              );
+            })
+          ) : (
+            <ActivityIndicator />
+          )}
+        </ScrollView>
+      </View>
     );
   }
 }
