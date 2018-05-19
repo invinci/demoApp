@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/ravikumar/Desktop/Ravi/ReactNative/demoApp/android/app/build/intermediates/res/merged/release/mipmap-hdpi/ic_launcher.png",
+        "source": "/Users/ravikumar/Desktop/Ravi/ReactNative/demoApp/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
         "merged": "/home/saurabhchauhan/Desktop/reactnative/test/shyft/android/app/build/intermediates/res/merged/release/mipmap-hdpi/ic_launcher.png",
         "source": "/home/saurabhchauhan/Desktop/reactnative/test/shyft/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     }

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/ravikumar/Desktop/Ravi/ReactNative/demoApp/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/ravikumar/Desktop/Ravi/ReactNative/demoApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.2/res/xml/preferences.xml"
+    },
+    {
         "merged": "/home/saurabhchauhan/Desktop/reactnative/test/shyft/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
         "source": "/home/saurabhchauhan/Desktop/reactnative/test/shyft/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.3/res/xml/preferences.xml"
     }
