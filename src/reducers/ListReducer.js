@@ -8,11 +8,10 @@ var options = {
   distance: 100,
   maxPatternLength: 32,
   minMatchCharLength: 1,
-  keys: ["make", "author.firstName"]
+  keys: ["make", "priceperday", "location", "regno", "model"]
 };
 
 export function searchDataFilter(list, text, sortBy, filterBy) {
-  console.log(list, text, "list, textlist, textlist, text");
   if (text === "") {
     return list;
   }
