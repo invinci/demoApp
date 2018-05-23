@@ -8,15 +8,31 @@ var options = {
   distance: 100,
   maxPatternLength: 32,
   minMatchCharLength: 1,
-  keys: ["make", "priceperday", "location", "regno", "model"]
+  keys: ["make", "priceperday", "location", "regno", "model", "category"]
 };
 
 export function searchDataFilter(list, text, sortBy, filterBy) {
   if (text === "") {
     return list;
   }
-  var fuse = new Fuse(list, options); // "list" is the item array
-  var result = fuse.search(text);
+  let result = list.filter(item => {
+    if (
+      item.make.toLowerCase().includes(text.toLowerCase()) ||
+      item.priceperday
+        .toString()
+        .toLowerCase()
+        .includes(text) ||
+      item.location.toLowerCase().includes(text.toLowerCase()) ||
+      item.regno.toLowerCase().includes(text.toLowerCase()) ||
+      item.model.toLowerCase().includes(text.toLowerCase()) ||
+      item.category.toLowerCase().includes(text.toLowerCase())
+    ) {
+      return item;
+    }
+  });
+  console.log(result, "checkDatacheckData");
+  // var fuse = new Fuse(list, options); // "list" is the item array
+  // var result = fuse.search(text);
   if (sortBy === "Descending") {
     result = _.orderBy(result, [filterBy ? filterBy : "make"], ["desc"]); // Use Lodash to sort array by 'name'
   } else {

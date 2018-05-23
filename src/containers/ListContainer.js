@@ -62,12 +62,8 @@ class ListContainer extends React.Component {
       open: false,
       filterdata: [
         {
-          label: "Name",
-          value: "Name"
-        },
-        {
-          label: "Company",
-          value: "Company"
+          label: "Make",
+          value: "Make"
         },
         {
           label: "Priceperday",
@@ -76,6 +72,22 @@ class ListContainer extends React.Component {
         {
           label: "Year",
           value: "Year"
+        },
+        {
+          label: "Model",
+          value: "Model"
+        },
+        {
+          label: "Category",
+          value: "Category"
+        },
+        {
+          label: "Location",
+          value: "Location"
+        },
+        {
+          label: "Regno",
+          value: "regno"
         }
       ],
       sortVal: [
@@ -94,6 +106,28 @@ class ListContainer extends React.Component {
   componentWillMount() {
     this.props.carList();
   }
+  componentDidMount() {
+    this.keyboardDidShowListener = Keyboard.addListener(
+      "keyboardDidShow",
+      this._keyboardDidShow
+    );
+    this.keyboardDidHideListener = Keyboard.addListener(
+      "keyboardDidHide",
+      this._keyboardDidHide
+    );
+  }
+  componentWillUnmount() {
+    this.keyboardDidShowListener.remove();
+    this.keyboardDidHideListener.remove();
+  }
+
+  _keyboardDidShow = () => {
+    this.setState({ open: true });
+  };
+
+  _keyboardDidHide = () => {
+    this.setState({ open: false });
+  };
 
   onChangeSort = val => {
     if (val) {
@@ -154,7 +188,7 @@ class ListContainer extends React.Component {
               onBlur={Keyboard.dismiss}
               onChangeText={search => {
                 this.setState({ search });
-                setTimeout(() => this.props.searchCar(search), 0);
+                setTimeout(() => this.props.searchCar(search), 1000);
               }}
               onFocus={() => this.setState({ open: true })}
               onBlur={() => this.setState({ open: false })}
